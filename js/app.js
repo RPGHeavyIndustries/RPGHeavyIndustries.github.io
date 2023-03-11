@@ -19,9 +19,13 @@ const cameraView = document.querySelector("#camera--view"),
             console.error("Oops. Something is broken.", error);
         });
     }
+
+//start the camera
+    camerastart2.onclick = function() {
+        window.addEventListener("load", cameraStart, false);
+    };
 //Take a picture when cameraTrigger is tapped
     cameraTrigger.onclick = function() {
-        window.addEventListener("load", cameraStart, false);
         cameraSensor.width = cameraView.videoWidth;
         cameraSensor.height = cameraView.videoHeight;
         cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
