@@ -23,7 +23,7 @@ const cameraView = document.querySelector("#camera--view"),
 
 //start the camera
     cameraStart2.onclick = function() {
-        window.addEventListener("load", cameraStart, false);
+        cameraStart()
     };
 //Take a picture when cameraTrigger is tapped
     cameraTrigger.onclick = function() {
