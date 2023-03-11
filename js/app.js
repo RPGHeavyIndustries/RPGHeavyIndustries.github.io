@@ -21,6 +21,7 @@ const cameraView = document.querySelector("#camera--view"),
     }
 //Take a picture when cameraTrigger is tapped
     cameraTrigger.onclick = function() {
+        window.addEventListener("load", cameraStart, false);
         cameraSensor.width = cameraView.videoWidth;
         cameraSensor.height = cameraView.videoHeight;
         cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
@@ -28,7 +29,7 @@ const cameraView = document.querySelector("#camera--view"),
         cameraOutput.classList.add("taken");
     };
     //Start the video stream when the window loads
-   // window.addEventListener("load", cameraStart, false);
+   
 
 // Install ServiceWorker
 if ('serviceWorker' in navigator) {
