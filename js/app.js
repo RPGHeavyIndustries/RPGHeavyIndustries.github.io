@@ -28,7 +28,7 @@ const cameraView = document.querySelector("#camera--view"),
         cameraOutput.classList.add("taken");
     };
     //Start the video stream when the window loads
-    window.addEventListener("load", cameraStart, false);
+   // window.addEventListener("load", cameraStart, false);
 
 // Install ServiceWorker
 if ('serviceWorker' in navigator) {
