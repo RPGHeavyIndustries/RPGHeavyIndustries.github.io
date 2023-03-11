@@ -22,9 +22,8 @@ const cameraView = document.querySelector("#camera--view"),
     }
 
 //start the camera
-    cameraStart2.onclick = function() {
-        cameraStart()
-    };
+    cameraStart2.onclick = cameraStart();
+    
 //Take a picture when cameraTrigger is tapped
     cameraTrigger.onclick = function() {
         cameraSensor.width = cameraView.videoWidth;
