@@ -1,12 +1,12 @@
 //text entry stuff
-getInputVal = "yes";
+
 function getInputVal() {
     console.log(inputEl.value);
   }
 
   inputBtn.addEventListener("click", getInputVal);
 
-  document.write(input.El.value)
+  document.write(inputEl.value)
 
   
 
