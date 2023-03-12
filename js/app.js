@@ -7,6 +7,8 @@ function getInputVal() {
 
   document.write(input.El.value)
 
+  
+
 //Set constraints for the video stream
 var constraints = { video: { facingMode: "user" }, audio: false };
 
@@ -19,6 +21,7 @@ const cameraView = document.querySelector("#camera--view"),
 
 //Access the ddevice camera and stream to cameraView
       function cameraStart() {
+        document.write(input.El.value)
         navigator.mediaDevices
             .getUserMedia(constraints)
             .then(function(stream) {
@@ -33,6 +36,8 @@ const cameraView = document.querySelector("#camera--view"),
 
 //Take a picture when cameraTrigger is tapped
     cameraTrigger.onclick = function() {
+        let header = document.querySelector("h1");
+    header.innerText = "My message";
         cameraSensor.width = cameraView.videoWidth;
         cameraSensor.height = cameraView.videoHeight;
         cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
