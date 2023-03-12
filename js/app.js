@@ -1,4 +1,6 @@
 //text entry stuff
+const inputBtn = document.getElementById("input-btn");
+const inputEl = document.getElementById("name");
 
 function getInputVal() {
     console.log(inputEl.value);
@@ -47,8 +49,7 @@ const cameraView = document.querySelector("#camera--view"),
     };
     //Start the video stream when the window loads
    
-    const inputBtn = document.getElementById("input-btn");
-    const inputEl = document.getElementById("name");
+    
     
     
 
