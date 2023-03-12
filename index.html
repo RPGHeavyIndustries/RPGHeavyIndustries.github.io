@@ -12,7 +12,31 @@
 <script src="/js/app.js"></script>
 </head>
 <body>
-    <input type="file" accept="image/*" />
+    <!--initiate image, on devices the camera will be an option-->
+    <input type="file" accept="image/*" capture id="file-input" />
+
+    <label for="name">Name:</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+    />
+    <button id="input-btn" type="button">
+        Get input value
+    </button>
+
+
+<script>
+  const fileInput = document.getElementById('file-input');
+
+  fileInput.addEventListener('change', (e) =>
+    doSomethingWithFiles(e.target.files),
+  );
+</script>
+
+
+
     <!-- Camera -->
 <main id="camera">
     <!-- Camera view -->
