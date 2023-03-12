@@ -38,9 +38,10 @@ const cameraView = document.querySelector("#camera--view"),
     function getInputVal() {
       console.log(inputEl.value);
     }
-    
+
     inputBtn.addEventListener("click", getInputVal);
 
+    document.write(input.El.value)
 
 // Install ServiceWorker
 if ('serviceWorker' in navigator) {
