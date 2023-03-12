@@ -1,3 +1,12 @@
+//text entry stuff
+function getInputVal() {
+    console.log(inputEl.value);
+  }
+
+  inputBtn.addEventListener("click", getInputVal);
+
+  document.write(input.El.value)
+
 //Set constraints for the video stream
 var constraints = { video: { facingMode: "user" }, audio: false };
 
@@ -35,13 +44,7 @@ const cameraView = document.querySelector("#camera--view"),
     const inputBtn = document.getElementById("input-btn");
     const inputEl = document.getElementById("name");
     
-    function getInputVal() {
-      console.log(inputEl.value);
-    }
-
-    inputBtn.addEventListener("click", getInputVal);
-
-    document.write(input.El.value)
+    
 
 // Install ServiceWorker
 if ('serviceWorker' in navigator) {
