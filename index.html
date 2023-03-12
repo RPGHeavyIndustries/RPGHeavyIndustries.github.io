@@ -7,56 +7,136 @@
 <!-- Name of your awesome camera app -->
 <title>Camera App</title> 
 <!-- Link to your main style sheet-->
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/style.css">
 <!-- Reference to your JavaScript file -->
-<script src="/js/app.js"></script>
+<script src="app.js"></script>
 </head>
 <body>
-    <h1>"test3"</h1>
-    <!--initiate image, on devices the camera will be an option-->
-    <input type="file" accept="image/*" capture id="file-input" />
+    <h1>rolling total</h1>
 
-    <label for="name">Name:</label>
+    <label for="plate1">Plate 1</label>
+  <!-- number plate 1 -->
     <input
       type="text"
-      id="name"
-      name="name"
+      id="plate1"
+      name="plate1"
       required
     />
-    <button id="inputBtn" type="button">
-        Get input value
+    <button id="input-plate1" type="button">
+        Get Plate 1
     </button>
-
-
-<script>
-  const fileInput = document.getElementById('file-input');
-
-  fileInput.addEventListener('change', (e) =>
-    doSomethingWithFiles(e.target.files),
-  );
-</script>
-
-
-
-    <!-- Camera -->
-<main id="camera">
-    <!-- Camera view -->
-    <video id="camera--view" autoplay playsinline></video>
-
-    <!-- Camera sensor -->
-    <canvas id="camera--sensor"></canvas>
-
-    <!-- Camera output -->
-    <img src="//:0" alt="" id="camera--output">
-
-    <!-- Camera trigger -->
-    <button id="camera--Start2" onclick="cameraStart()">start camera</button>
-
-    <!-- Camera trigger -->
-    <button id="camera--trigger">Take a picture</button>
-
-    
-</main>
+  </br>
+  <!-- number plate 2 -->
+  <label for="plate2">Plate 2</label>
+    <input
+      type="text"
+      id="plate2"
+      name="plate2"
+      required
+    />
+    <button id="input-plate2" type="button">
+        Get Plate 2
+    </button>
+  </br>
+      <label for="plate3">Plate 3</label>
+  <!-- number plate 3 -->
+    <input
+      type="text"
+      id="plate1"
+      name="plate1"
+      required
+    />
+    <button id="input-plate3" type="button">
+        Get Plate 3
+    </button>
+  </br>
+  <!-- number plate 4 -->
+  <label for="plate4">Plate 4</label>
+    <input
+      type="text"
+      id="plate4"
+      name="plate4"
+      required
+    />
+    <button id="input-plate4" type="button">
+        Get Plate 4
+    </button>
+</br>
+<!-- number plate 5 -->
+  <label for="plate5">Plate 5</label>
+    <input
+      type="text"
+      id="plate5"
+      name="plate5"
+      required
+    />
+    <button id="input-plate5" type="button">
+        Get Plate 5
+    </button>
+</br>
+   <label for="plate6">Plate 6</label>
+  <!-- number plate 6 -->
+    <input
+      type="text"
+      id="plate6"
+      name="plate6"
+      required
+    />
+    <button id="input-plate6" type="button">
+        Get Plate 7
+    </button>
+  </br>
+  <!-- number plate 7 -->
+  <label for="plate7">Plate 7</label>
+    <input
+      type="text"
+      id="plate7"
+      name="plate7"
+      required
+    />
+    <button id="input-plate7" type="button">
+        Get Plate 7
+    </button>
+  </br>
+      <label for="plate8">Plate 8</label>
+  <!-- number plate 8 -->
+    <input
+      type="text"
+      id="plate8"
+      name="plate8"
+      required
+    />
+    <button id="input-plate8" type="button">
+        Get Plate 8
+    </button>
+  </br>
+  <!-- number plate 9 -->
+  <label for="plate9">Plate 9</label>
+    <input
+      type="text"
+      id="plate9"
+      name="plate9"
+      required
+    />
+    <button id="input-plate9" type="button">
+        Get Plate 9
+    </button>
+</br>
+<!-- number plate 10 -->
+  <label for="plate5">Plate 10</label>
+    <input
+      type="text"
+      id="plate10"
+      name="plate10"
+      required
+    />
+    <button id="input-plate10" type="button">
+        Get Plate 10
+    </button>
+</br>
+  <button id="input-btn2" type="button">
+        write to screen
+    </button>
 
 </body>
 </html>
