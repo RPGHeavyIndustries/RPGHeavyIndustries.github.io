@@ -1,5 +1,5 @@
 //text entry stuff
-let getInputVal = "yes";
+getInputVal = "yes";
 function getInputVal() {
     console.log(inputEl.value);
   }
